@@ -116,9 +116,9 @@ const animals = [...reptiles, ...mammals];
 
 // when uses as a parameter for a function numbers is now an array containing
 // all the arguments
-function rest(...numbers) {
-    return numbers;
-}
+// function rest(...numbers) {
+//     return numbers;
+// }
 
 // console.log(rest(3, 4, 5))
 

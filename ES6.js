@@ -61,8 +61,12 @@ let person = {
         city: 'Berlin'
     }
 };
-const { name: personName, age, hobby, student, address: { city }, address } = person;
+const { name, age, hobby, student, address } = person;
+console.log(name, age, hobby, student, address);
 
+// Bonus: Aliasing and Destructuring from a nested structure
+// here we are aliasing the name to a variable called personName and the city we destructure 
+// from one level down in the address object
 // const { name: personName, age, hobby, student, address: { city }, address } = person;
 // console.log(address);
 
@@ -79,7 +83,10 @@ const { name: personName, age, hobby, student, address: { city }, address } = pe
 // const numbers = ["one", "two", "three", "four", "five"];
 
 // let's take the first element
-// const [, , third] = numbers;
+// const [first] = numbers;
+
+// let's take the third element
+// const [third] = numbers;
 
 // console.log(third);
 
@@ -107,7 +114,8 @@ const animals = [...reptiles, ...mammals];
 // console.log(animals);
 
 
-
+// when uses as a parameter for a function numbers is now an array containing
+// all the arguments
 function rest(...numbers) {
     return numbers;
 }

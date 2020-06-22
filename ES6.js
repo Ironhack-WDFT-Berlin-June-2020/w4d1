@@ -62,7 +62,7 @@ let person = {
     }
 };
 const { name, age, hobby, student, address } = person;
-console.log(name, age, hobby, student, address);
+// console.log(name, age, hobby, student, address);
 
 // Bonus: Aliasing and Destructuring from a nested structure
 // here we are aliasing the name to a variable called personName and the city we destructure 
@@ -97,7 +97,7 @@ console.log(name, age, hobby, student, address);
 
 const [a, b = 2, c, d = 1] = [3, 4]
 
-console.log(a, b, c, d);
+// console.log(a, b, c, d);
 
 
 
@@ -120,4 +120,5 @@ function rest(...numbers) {
     return numbers;
 }
 
-console.log(rest(3, 4, 5))
+// console.log(rest(3, 4, 5))
+
